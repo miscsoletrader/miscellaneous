@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,10 @@ ROOT_URLCONF = 'miscellaneous.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),  # Add project level directory which contains 'main_misc.html'
+            os.path.join(BASE_DIR, 'templates', 'allauth'),  # Add custom allauth directory
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -88,6 +92,7 @@ ACCOUNT_EMAIL_REQUIRED = True  # Email is required to register onsite
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'  # Email verifiacation is mandatory
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True  # Required user to enter email twice to make sure there is no typo
 ACCOUNT_USERNAME_MIN_LENGTH = 4  # Minimum user length
+ACCOUNT_UNIQUE_EMAIL =True  # Enforce uniqueness of e-mail addresses. The emailaddress.email model field is set to UNIQUE. Forms prevent a user from registering with or adding an additional email address if that email address is in use by another account.
 LOGIN_URL = 'account/login/'  # Specify login URL
 LOGIN_REDIRECT_URL = '/'  # URL to redirect after login in
 
@@ -142,3 +147,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
