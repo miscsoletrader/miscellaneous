@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+{% extends "main_misc.html" %}
+
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="container-fluid h-100 home-back">
+        <div class="row h-100">
+            <div class="col-xl-2"></div>
+            <div class="col-12 col-xl-8 text-center">
+                
+                <h1 class="contact-font">
+                    Contact us
+                </h1>
+                <ul class="contact-list">
+                    <li>Contact us on miscellaneous.soletrader@gmail.com</li>
+                    <hr>
+                    <br>
+                    <li class="text-uppercase">Delivery</li>
+                    <li>We dispatched our all item within a day of clear payment received for the UK mainland as well as for rest of the world.</li>
+                    <li>Approximate time for delivery within the UK: 3-4 days (Excluding weekends)</li>
+                    <li>If you require quick delivery, please get in touch with us through reliable messaging service for the concern online retailer</li>
+                    <li>Approximate time for delivery for rest of the World: 7-20 days</li>
+                    <li>We will provide with available postal service for the parcel receiving country such as track and sign or sign the only service. Delivery may differ depends on customs clearance of the concern Country and postal service.</li>
+                    <li>We request all our buyer to get in touch with us in case of any query related to parcel or delivery rather than negative feedback. We will provide you with best possible service to fulfill your requirement for the item you have purchased from us.</li>
+                    <hr>
+                    <br>
+                    <li class="text-uppercase">Return & Refund Policy</li>
+                    <li>We have 30 days return or refund guarantee for the purchased product with valid reason.</li>
+                    <li>If there was no mistake made from our side dispatching product, we won't offer the refund on either side postage paid.</li>
+                    <li>If there was the mistake made from our side or product carrying faulty or damage, we will provide you with full refund including return postage paid once we will receive our product back.</li>
+                    <li>If the product is out of the original retail packaging and not carrying any fault or damage we won't offer any refund.</li>
+                    <li>If we won't get our product back within agreed time, the return will be refuse and won't consider it back.</li>
+
+                </ul>
+                <div class="my-5">
+                    <h4>
+                        <a href="{% url 'home' %}" class="home-btn home-btn-lg rounded-2 py-3">Home</a>
+                    </h4>
+                </div>
+            </div>
+            <div class="col-xl-2"></div>
+        </div>
+    </div>
+{% endblock %}
