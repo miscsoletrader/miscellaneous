@@ -1,3 +1,7 @@
+/* font-family: 'Alex Brush', 'Arsenal', 'Averia Gruesa Libre', 'Baloo Paaji 2', 'Bungee Outline', 'Cagliostro', 'Cinzel', 'Dancing Script',
+'Dosis', 'Faster One', 'Josefin Sans', 'Laila', 'Lato', 'Libre Barcode 39 Text', 'Marcellus SC', 'Megrim', 'Overlock', 'Ribeye Marrow',
+'Roboto', 'Sacramento', 'Varela Round', 'Vollkorn SC' */
+
 @font-face {
     font-family: 'Berlin Sans FB';
     src: local('Berlin Sans FB'), local('BerlinSansFB-Reg'),
@@ -34,38 +38,46 @@ body {
 
 
 /*---------------------------------------------- Nav Space Setting ----------*/
-.header-container {
-        padding-top: 72px;
+@media (min-width: 991px) {
+    .header-container {
+        padding-top: 120px;
     }
+}
 
+@media (max-width: 990px) {
+    .header-container {
+        padding-top: 80px;
+    }
+}
 /*----------------------------------------- Nav Background Setting ----------*/
 .nav-bg {
-    background-color: #81bd9a;
+    background-color: #fff;
 }
 
 
 /*-------------------------------------------- Nav Search Setting ----------*/
 .nav-search {
-  display: block;
+  display: inline-flex;
   width: 80%;
   padding: 0.375rem 0.75rem;
-  margin-right: 0.3125rem;
+  margin: auto;
+  /* margin-right: 0.3125rem; */
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #81bd9a;
+  background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #005826;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  -webkit-appearance: inherit;
+  -moz-appearance: inherit;
   appearance: none;
   border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .nav-search-btn {
-  display: inline-block;
+  display: inline-flex;
+  /* margin: auto; */
   font-weight: 400;
   line-height: 1.5;
   color: #fff;
@@ -73,15 +85,14 @@ body {
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
+  -webkit-user-select: inherit;
+  -moz-user-select: inherit;
   user-select: none;
   background-color: #005826;
   border: 1px solid #005826;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .nav-search-btn:hover {
@@ -94,7 +105,6 @@ body {
   display: block;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-acc {
@@ -107,14 +117,49 @@ body {
   cursor: default;
 }
 
-.nav-acc:hover {
-    border-color: #005826;
-    color: #fff;
+.nav-acc:hover i {
+    color: #ee8631;
+    font-size: x-large;
+}
+
+.nav-acc:hover p {
+    color: #005826;
+}
+
+.menu-font {
+    font-family: 'Dosis' !important;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #005826 !important;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.menu-font:hover>span{
+    color: #ee8631 !important;
+    /* font-size: large; */
+}
+
+.dropdown-item {
+    font-family: 'Dosis' !important;
+    /* font-size: 1.125rem; */
+    font-weight: bold;
+    color: #005826 !important;
+}
+
+.dropdown-item:hover>span {
+    color: #ee8631 !important;
 }
 
 /*--------------------------------------------- Logo Fonts Setting ----------*/
 .logo-font {
     color: #005826;
+}
+
+
+.logo-font:hover strong {
+    color: #ee8631;
+    font-size: larger;
 }
 
 .logo-fontawesome {
@@ -171,21 +216,22 @@ body {
 /*-------------------------------------------- Contact page Setting ----------*/
 .contact-font {
   font-size: calc(0.9375rem + 1vw);
-  font-weight: 100;
-  line-height: 1.2;
+  font-family: 'Dosis';
+  /* line-height: 1.2; */
   color: #fff;
   padding-top: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 @media (min-width: 5120px) {
-  .home-font {
+  .contact-font {
     font-size: 3.5rem;
   }
 }
 
 .contact-list {
     color: #fff;
-    font-size: 1.25rem;
-    font-family: 'Acme';
-    font-weight: 200;
+    font-size: calc(0.6875rem + 1vw);
+    font-family: 'Overlock';
     text-align: left;
 }
