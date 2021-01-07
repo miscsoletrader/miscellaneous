@@ -1,7 +1,14 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: pip3 install -r requirements.txt
+- init: >
+    pip3 install -r requirements.txt &&
+    python3 manage.py migrate
+  command: >
+    echo "from locallibrary.settings import *" > locallibrary/local_settings.py &&
+    echo "ALLOWED_HOSTS = ['*']" >> locallibrary/local_settings.py &&
+    export DJANGO_SETTINGS_MODULE=locallibrary.local_settings &&
+    python3 manage.py runserver 0.0.0.0:8080
 vscode:
   extensions:
     - ms-python.python@2019.8.30787:TnGEOx35GXMhyKLjDGz9Aw==

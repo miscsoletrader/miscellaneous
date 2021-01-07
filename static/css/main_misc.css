@@ -3,7 +3,7 @@
 'Roboto', 'Sacramento', 'Varela Round', 'Vollkorn SC' */
 
 @font-face {
-    font-family: 'Berlin Sans FB';
+    font-family: 'Berlin Sans FB', 'Dosis';
     src: local('Berlin Sans FB'), local('BerlinSansFB-Reg'),
         url('fonts/BerlinSansFB-Reg.woff2') format('woff2'),
         url('fonts/BerlinSansFB-Reg.woff') format('woff');
@@ -20,7 +20,7 @@ body {
     background-size: cover;
     height: 100vh;
     color: #555;
-    font-family: 'Berlin Sans FB';
+    font-family: 'Berlin Sans FB', 'Dosis';
 }
 
 /*---------------------------------------- Main Page Fonts Setting ----------*/
@@ -154,7 +154,7 @@ body {
 /*--------------------------------------------- Logo Fonts Setting ----------*/
 .logo-font {
     color: #005826;
-    font-family: 'Berlin Sans FB' ;
+    font-family: 'Berlin Sans FB', 'Dosis' ;
 }
 
 
