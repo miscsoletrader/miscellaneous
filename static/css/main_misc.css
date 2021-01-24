@@ -1,30 +1,19 @@
-/* font-family: 'Alex Brush', 'Arsenal', 'Averia Gruesa Libre', 'Baloo Paaji 2', 'Bungee Outline', 'Cagliostro', 'Cinzel', 'Dancing Script',
-'Dosis', 'Faster One', 'Josefin Sans', 'Laila', 'Lato', 'Libre Barcode 39 Text', 'Marcellus SC', 'Megrim', 'Overlock', 'Ribeye Marrow',
-'Roboto', 'Sacramento', 'Varela Round', 'Vollkorn SC' */
-
-@font-face {
-    font-family: 'Berlin Sans FB', 'Dosis';
-    src: local('Berlin Sans FB'), local('BerlinSansFB-Reg'),
-        url('fonts/BerlinSansFB-Reg.woff2') format('woff2'),
-        url('fonts/BerlinSansFB-Reg.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+/* font-family: 'Roboto', 'Lato', 'Lora', 'Josefin Sans', 'Dancing Script', 'Berkshire Swash', 'Cormorant SC', 'Libre Barcode 39 Text' */
 
 html {
-    height: 100%
+  height: 100%
 }
 
 body {
-    background-size: cover;
-    height: 100vh;
-    color: #555;
-    font-family: 'Berlin Sans FB', 'Dosis';
+  font-family: 'Roboto', 'Lato';
+  background-size: cover;
+  height: 100vh;
+  color: #555;
 }
 
 /*---------------------------------------- Main Page Fonts Setting ----------*/
 .home-font {
+  font-family: 'Dancing Script';
   font-size: calc(0.9375rem + 11vw);
   font-weight: 600;
   line-height: 1.2;
@@ -39,19 +28,19 @@ body {
 
 /*---------------------------------------------- Nav Space Setting ----------*/
 @media (min-width: 991px) {
-    .header-container {
-        padding-top: 120px;
-    }
+  .header-container {
+    padding-top: 120px;
+  }
 }
 
 @media (max-width: 990px) {
-    .header-container {
-        padding-top: 80px;
-    }
+  .header-container {
+    padding-top: 80px;
+  }
 }
 /*----------------------------------------- Nav Background Setting ----------*/
 .nav-bg {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 
@@ -96,8 +85,8 @@ body {
 }
 
 .nav-search-btn:hover {
-    background-color: #81bd9a;
-    color: #005826;
+  background-color: #81bd9a;
+  color: #005826;
 }
 
 /*----------------------------------------- Nav Account/Bag Setting ----------*/
@@ -118,62 +107,62 @@ body {
 }
 
 .nav-acc:hover i {
-    color: #ee8631;
-    font-size: x-large;
+  color: #ee8631;
+  font-size: x-large;
 }
 
 .nav-acc:hover p {
-    color: #005826;
+  color: #005826;
 }
 
 .menu-font {
-    font-family: 'Dosis' !important;
-    font-size: 1.125rem;
-    font-weight: bold;
-    color: #005826 !important;
-    margin-left: 35px;
-    margin-right: 35px;
+  font-family: 'Lato' !important;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #005826 !important;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
 .menu-font:hover>span{
-    color: #ee8631 !important;
-    /* font-size: large; */
+  color: #ee8631 !important;
+  /* font-size: large; */
 }
 
 .dropdown-item {
-    font-family: 'Dosis' !important;
-    /* font-size: 1.125rem; */
-    font-weight: bold;
-    color: #005826 !important;
+  font-family: 'Lato' !important;
+  /* font-size: 1.125rem; */
+  font-weight: bold;
+  color: #005826 !important;
 }
 
 .dropdown-item:hover>span {
-    color: #ee8631 !important;
+  color: #ee8631 !important;
 }
 
 /*--------------------------------------------- Logo Fonts Setting ----------*/
 .logo-font {
-    color: #005826;
-    font-family: 'Berlin Sans FB', 'Dosis' ;
+  color: #005826;
+  font-family: 'Lato' ;
 }
 
 
 .logo-font:hover strong {
-    color: #ee8631;
-    font-size: larger;
+  color: #ee8631;
+  font-size: larger;
 }
 
 .logo-fontawesome {
-    font-size: calc(0.9375rem + 6vw);
+  font-size: calc(0.9375rem + 6vw);
 }
 
 .logo-fontawesome-i {
-    font-size: calc(0.9375rem + 7vw);
+  font-size: calc(0.9375rem + 7vw);
 }
 
 /*---------------------------------------- Home Background Setting ----------*/
 .home-back {
-    background-color: #005826;
+  background-color: #005826;
 }
 
 /*-------------------------------------------- Home Button Setting ----------*/
@@ -210,14 +199,14 @@ body {
 }
 
 .home-btn:hover {
-    background-color: #81bd9a;
-    color: #005826;
+  background-color: #81bd9a;
+  color: #005826;
 }
 
 /*-------------------------------------------- Contact page Setting ----------*/
 .contact-font {
   font-size: calc(0.9375rem + 1vw);
-  font-family: 'Dosis';
+  font-family: 'Lato' !important;
   /* line-height: 1.2; */
   color: #fff;
   padding-top: 15px;
@@ -231,8 +220,8 @@ body {
 }
 
 .contact-list {
-    color: #fff;
-    font-size: calc(0.6875rem + 1vw);
-    font-family: 'Overlock';
-    text-align: left;
+  color: #fff;
+  font-size: calc(0.6875rem + 1vw);
+  font-family: 'Overlock';
+  text-align: left;
 }
