@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', 'Lato';
+  font-family: 'Roboto';
   background-size: cover;
   height: 100vh;
   color: #555;
@@ -92,8 +92,10 @@ body {
 /*----------------------------------------- Nav Account/Bag Setting ----------*/
 .nav-acc {
   display: block;
+  font-weight: bold;
   padding: 0.5rem 1rem;
   text-decoration: none;
+  color: #005826 !important;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-acc {
@@ -118,10 +120,10 @@ body {
 .menu-font {
   font-family: 'Lato' !important;
   font-size: 1.125rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #005826 !important;
-  margin-left: 35px;
-  margin-right: 35px;
+  /* margin-left: 35px;
+  margin-right: 35px; */
 }
 
 .menu-font:hover>span{
@@ -138,6 +140,12 @@ body {
 
 .dropdown-item:hover>span {
   color: #ee8631 !important;
+}
+
+.nav-product {
+  display: block;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 /*--------------------------------------------- Logo Fonts Setting ----------*/
@@ -206,6 +214,7 @@ body {
 /*-------------------------------------------- Contact page Setting ----------*/
 .contact-font {
   font-size: calc(0.9375rem + 1vw);
+  /* font-size: 1rem; */
   font-family: 'Lato' !important;
   /* line-height: 1.2; */
   color: #fff;
@@ -221,7 +230,8 @@ body {
 
 .contact-list {
   color: #fff;
-  font-size: calc(0.6875rem + 1vw);
-  font-family: 'Overlock';
+  /* font-size: calc(0.5625rem + 1vw); */
+  font-size: 1.25rem;
+  font-family: 'Josefin Sans';
   text-align: left;
 }
