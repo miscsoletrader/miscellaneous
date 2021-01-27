@@ -44,13 +44,13 @@
     </head>
     <body>
         <header class="container-fluid fixed-top nav-bg">
-            <div id="topnav" class="row d-none d-lg-flex">
-                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-start text-lg-start">
+            <div id="topnav" class="row">
+                <div class="col-12 col-lg-6 my-auto py-1 py-lg-0 text-start text-lg-start d-none d-lg-flex">
                     <a href="{% url 'home' %}" class="nav-link main-logo-link">
                         <h2 class="logo-font my-0"><strong>Misc</strong>ellaneous</h2>
                     </a>
                 </div>
-                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center">
+                <!-- <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center">
                     <form method="GET" action="">
                         <div class="input-group w-100">
                             <input class="nav-search border-black rounded-2" type="text" name="q" placeholder="Search">
@@ -63,12 +63,12 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> -->
 
-                <div class="col-12 col-lg-4 my-auto mx-auto py-1 py-lg-0">
+                <!-- <div class="col-12 col-lg-6 my-auto mx-auto py-1 py-lg-0">
                     <ul class="list-inline list-unstyled my-0 text-end">
 
-                        <li class="list-inline-item dropdown">
+                        <li class="list-inline-item">
                             <a class="logo-font nav-product nav-acc mr-5" href="#" id="search-product" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
                                     <div class="icon">
@@ -77,12 +77,12 @@
                                     Search
                                 </div>
                             </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="all-product-link">
+                            <div class="dropdown-menu border-0 w-100 p-3 my-0 col-12 col-lg-4 my-auto py-1" aria-labelledby="mobile-search">
                                 <form method="GET" action="">
                                     <div class="input-group w-100">
-                                        <input class="nav-search border-black rounded-2" type="text" name="q" placeholder="Search">
+                                        <input class="nav-search" type="text" name="q" placeholder="Search">
                                         <div class="input-group-append">
-                                            <button class="form-control nav-search-btn btn-black rounded-2" type="submit">
+                                            <button class="form-control nav-search-btn" type="submit">
                                                 <span class="icon">
                                                     <i class="fas fa-search"></i>
                                                 </span>
@@ -159,17 +159,18 @@
                             </a>
                         </li>
                     </ul>
+                </div> -->
+                <div class="col-12 col-lg-6 my-auto py-1 py-lg-0">
+                    <nav class="navbar navbar-expand-lg navbar-light w-100">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#misc_nav" aris-controls="misc_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        {% include 'includes/mobile_misc_nav.html' %}
+                        {% include 'includes/main_nav.html' %}                    
+                    </nav>
                 </div>
             </div>
-            <div class="row bg-white">
-                <nav class="navbar navbar-expand-lg navbar-light w-100">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#misc_nav" aris-controls="misc_nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    {% include 'includes/mobile_misc_nav.html' %}
-                    
-                </nav>
-            </div>
+            
         </header>
 
         {% if messages %}

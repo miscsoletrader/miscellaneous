@@ -9,9 +9,9 @@
     <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0 col-12 col-lg-4 my-auto py-1 py-lg-0" aria-labelledby="mobile-search">
         <form method="GET" action="">
             <div class="input-group w-100">
-                <input class="nav-search border-black rounded-2" type="text" name="q" placeholder="Search">
+                <input class="nav-search rounded-2" type="text" name="q" placeholder="Search">
                 <div class="input-group-append">
-                    <button class="form-control nav-search-btn btn-black rounded-2" type="submit">
+                    <button class="form-control nav-search-btn rounded-2" type="submit">
                         <span class="icon">
                             <i class="fas fa-search"></i>
                         </span>
@@ -32,13 +32,13 @@
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
-                <a href="" class="dropdown-item">Design Management</a>
+                <a href="" class="dropdown-item">Product <span>Manage</span>ment</a>
             {% endif %}
-            <a href="" class="dropdown-item">My Profile</a>
-            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+            <a href="" class="dropdown-item">My <span>Profile</span></a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item">Log<span>out</span></a>
         {% else %}
-            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+            <a href="{% url 'account_signup' %}" class="dropdown-item"><span>Reg</span>ister</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item">Log<span>in</span></a>
         {% endif %}
     </div>
 </li>
