@@ -7,8 +7,9 @@ html {
 body {
   font-family: 'Roboto';
   background-size: cover;
-  height: 100vh;
-  color: #555;
+  height: 100%;
+  color: #005826;
+  
 }
 
 /*---------------------------------------- Main Page Fonts Setting ----------*/
@@ -16,7 +17,7 @@ body {
   font-family: 'Dancing Script';
   font-size: calc(0.9375rem + 11vw);
   font-weight: 600;
-  line-height: 1.2;
+  /* line-height: 1.2; */
   color: #005826;
 }
 @media (min-width: 5120px) {
@@ -43,7 +44,7 @@ body {
 /*---------------------------------------------- Nav Space Setting ----------*/
 @media (min-width: 991px) {
   .header-container {
-    padding-top: 120px;
+    padding-top: 80px;
   }
 }
 
@@ -52,9 +53,11 @@ body {
     padding-top: 80px;
   }
 }
+
+
 /*----------------------------------------- Nav Background Setting ----------*/
 .nav-bg {
-  background-color: #fff;
+  background-color: rgba(255,255,255,.8);
   box-shadow: 0 4px 4px -4px rgba(0,0,0,.2);
 }
 
@@ -68,7 +71,7 @@ body {
   /* margin-right: 0.3125rem; */
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   color: #212529;
   background-color: #fff;
   background-clip: padding-box;
@@ -84,7 +87,7 @@ body {
   display: inline-flex;
   /* margin: auto; */
   font-weight: 400;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -126,11 +129,20 @@ body {
 
 .nav-acc:hover i {
   color: #ee8631;
-  font-size: x-large;
+  font-size: large;
 }
 
 .nav-acc:hover p {
   color: #005826;
+}
+
+.list-item {
+  list-style-type: none; /* to get-rid off bullet point from side bar menu item(s) */
+}
+
+.dropdown-item:hover {
+  color: #fff;
+  background-color: rgb(247, 247, 247);
 }
 
 .menu-font {
@@ -174,23 +186,60 @@ body {
   font-family: 'Lato';
 }
 
-.logo-font-head {
-  color: #005826;
-  font-family: 'Dancing Script';
-  font-size: 3rem;
-}
-
 .logo-font:hover strong {
   color: #ee8631;
   font-size: larger;
 }
 
-.logo-fontawesome {
-  font-size: calc(0.9375rem + 6vw);
+/*----------------------------------------------- Side Nav Setting ----------*/
+
+/*----------------- Side Nav Font Setting ----------*/
+
+.side-nav-font {
+  color: #005826;
+  font-family: 'Roboto';
+  font-size: 1.2rem;
 }
 
-.logo-fontawesome-i {
-  font-size: calc(0.9375rem + 7vw);
+.side-nav-font:hover {
+  color: #ee8631;
+  font-size: larger;
+  background-color: #fff;
+}
+
+/*-------------- Side Nav Display Setting ----------*/
+
+.side-nav-list {
+  display: block;
+  /* font-weight: bold; */
+  padding: 1rem 1rem;
+  text-decoration: none;
+  color: #005826 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .side-nav-list {
+    transition: none;
+  }
+}
+.side-nav-list.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
+}
+
+.side-nav-list:hover i {
+  color: #ee8631;
+  font-size: large;
+  /* background-color: rgba(255,255,255,.2); */
+}
+
+.side-nav-list:hover {
+  color: #005826;
+  background-color: #ffffff;
+}
+
+.side-nav-bg {
+  background-color: #f3f3f3;
 }
 
 /*---------------------------------------- Home Background Setting ----------*/
@@ -242,7 +291,7 @@ body {
   /* font-size: 1rem; */
   font-family: 'Lato' !important;
   /* line-height: 1.2; */
-  color: #fff;
+  color: #005826;
   padding-top: 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -254,7 +303,7 @@ body {
 }
 
 .contact-list {
-  color: #fff;
+  color: #005826;
   /* font-size: calc(0.5625rem + 1vw); */
   font-size: 1.25rem;
   font-family: 'Josefin Sans';

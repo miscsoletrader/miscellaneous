@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <div class="collapse navbar-collapse" id="misc_nav">
     <ul class="navbar-nav w-auto nav-margin menu-font">
-        <li class="list-inline-item d-none d-lg-flex">
+        <li class="list-inline-item d-none">
             <a class="logo-font nav-product nav-acc mr-5" href="#" id="search-product" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="text-center">
                     <div class="icon">
@@ -13,7 +13,7 @@
             <div class="dropdown-menu border-0 w-100 p-3 my-0 col-12 col-lg-4 my-auto py-1" aria-labelledby="mobile-search">
                 <form method="GET" action="">
                     <div class="input-group w-100">
-                        <input class="nav-search" type="text" name="q" placeholder="Search">
+                        <input class="nav-search" type="text" name="q" placeholder="Search for Products">
                         <div class="input-group-append">
                             <button class="form-control nav-search-btn" type="submit">
                                 <span class="icon">
@@ -26,7 +26,7 @@
             </div>
         </li>
         
-        <li class="list-inline-item dropdown">
+        <li class="list-inline-item dropdown d-flex d-lg-none">
             <a class="logo-font nav-product nav-acc mr-5" href="#" id="all-product-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="text-center">
                     <div><i class="fas fa-boxes fa-lg"></i></div>
@@ -41,7 +41,7 @@
             </div>
         </li>
 
-        <li class="list-inline-item dropdown">
+        <li class="list-inline-item dropdown d-flex d-lg-none">
             <a class="logo-font nav-acc mr-5" href="#" id="all-offer-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="text-center">
                     <div><i class="fas fa-tag fa-lg"></i></div>
@@ -56,7 +56,7 @@
             </div>
         </li>
 
-        <li class="list-inline-item dropdown">
+        <li class="list-inline-item dropdown d-none d-lg-block">
             <a class="logo-font nav-acc" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="text-center">
                     <div><i class="fas fa-user fa-lg"></i></div>
@@ -77,7 +77,7 @@
             </div>
         </li>
         
-        <li class="list-inline-item">
+        <li class="list-inline-item d-none d-lg-block">
             <a class="{% if grand_total %}text-info font-weight-bold{% else %}logo-font{% endif %} nav-acc" href="">
                 <div class="text-center">
                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
@@ -91,5 +91,6 @@
                 </div>
             </a>
         </li>
+
     </ul>
 </div>
