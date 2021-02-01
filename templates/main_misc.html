@@ -100,7 +100,7 @@
                     {% block content %}
                     {% endblock %}
                 </div>
-                <div class="col-12 col-lg-2 py-1 py-lg-0 text-start text-lg-start d-none d-lg-block side-nav-bg">
+                <div class="col-12 col-lg-2 py-1 py-lg-0 text-start text-lg-start d-none d-lg-block market-nav-bg">
                     {% include 'includes/market_nav.html' %}
                 </div>
             </div>
@@ -110,8 +110,11 @@
             
         {% endblock %}
 
-        <footer  class="container-fluid text-center fixed-bottom nav-bg my-auto">
-            <div>We are registered as <strong>Sole Trader</strong>. We are trading as <strong>Miscellaneous</strong>, also we are on <i class="fab fa-amazon fa-lg"></i> as MiscSoleTrade and on <i class="fab fa-ebay fa-lg"></i> as MiscellaneousSoleTrader</div>
+        <footer  class="container-fluid text-center bottom bottom-nav-bg my-auto py-3 bottom-nav-font">
+            <div class="d-lg-none justify-content-center d-md-flex mx-auto">
+                {% include 'includes/market_nav.html' %}
+            </div>
+            <div>We are registered as <strong>Sole Trader</strong>. We are trading as <strong>Miscellaneous</strong><br>We are on <i class="fab fa-amazon fa-lg"></i> as MiscSoleTrade and on <i class="fab fa-ebay fa-lg"></i> as MiscellaneousSoleTrader</div>
         </footer>
 
         {% block postloadjs %}

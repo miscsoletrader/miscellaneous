@@ -46,14 +46,14 @@ body {
   padding-top: 80px;
 }
 
-.footer-container {
+/* .footer-container {
   padding-top: 40px;
-}
+} */
 
 /*----------------------------------------- Nav Background Setting ----------*/
 .nav-bg {
   background-color: rgba(255,255,255, 0.95);
-  box-shadow: 0 4px 4px -4px rgba(0,0,0,.2);
+  box-shadow: 0 4px 4px -4px rgba(0,0,0,.2); /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
 }
 
 /*-------------------------------------------- Nav Search Setting ----------*/
@@ -234,7 +234,10 @@ body {
 }
 
 .side-nav-bg {
-  background-color: #f3f3f3;
+  background-color: #fcfcfc;
+  -moz-box-shadow: 1px 0 2px -2px #005826;
+  -webkit-box-shadow: 1px 0 2px -2px #005826;
+  box-shadow: 1px 0 2px -2px #005826; /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
 }
 
 /*--------------------------------------------- Market Nav Setting ----------*/
@@ -285,7 +288,64 @@ body {
 }
 
 .market-nav-bg {
-  background-color: #f3f3f3;
+  background-color: #fcfcfc;
+  -moz-box-shadow: -1px 0 2px -2px #005826;
+  -webkit-box-shadow: -1px 0 2px -2px #005826;
+  box-shadow: -1px 0 2px -2px #005826; /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
+}
+
+/*--------------------------------------------- Bottom Nav Setting ----------*/
+
+/*--------------- Bottom Nav Font Setting ----------*/
+
+.bottom-nav-font {
+  color: #005826;
+  font-family: 'Lato';
+  font-size: 1.2rem;
+}
+
+.bottom-nav-font:hover {
+  color: #ee8631;
+  font-size: larger;
+  background-color: #fff;
+}
+
+/*------------ Bottom Nav Display Setting ----------*/
+
+.bottom-nav-list {
+  display: block;
+  /* font-weight: bold; */
+  padding: 1rem 1rem;
+  text-decoration: none;
+  color: #005826 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bottom-nav-list {
+    transition: none;
+  }
+}
+.bottom-nav-list.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
+}
+
+.bottom-nav-list:hover i {
+  color: #ee8631;
+  font-size: large;
+  /* background-color: rgba(255,255,255,.2); */
+}
+
+.bottom-nav-list:hover {
+  color: #005826;
+  background-color: #ffffff;
+}
+
+.bottom-nav-bg {
+  background-color: #fcfcfc;
+  -moz-box-shadow: 0 -1px 2px -2px #005826;
+  -webkit-box-shadow: 0 -1px 2px -2px #005826;
+  box-shadow: 0 -1px 2px -2px #005826; /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
 }
 
 /*---------------------------------------- Home Background Setting ----------*/
