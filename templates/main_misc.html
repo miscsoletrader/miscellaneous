@@ -52,10 +52,10 @@
                 </div>
                 <div class="col-12 col-lg-4 my-auto py-lg-0 text-center d-none d-lg-block">
                     <form method="GET" action="">
-                        <div class="input-group w-100">
+                        <div class="input-group w-100 justify-content-center">
                             <input class="nav-search" type="text" name="q" placeholder="Search for Products">
                             <div class="input-group-append">
-                                <button class="form-control nav-search-btn btn-black rounded-2" type="submit">
+                                <button class="form-control nav-search-btn" type="submit">
                                     <span class="icon">
                                         <i class="fas fa-search"></i>
                                     </span>
@@ -92,7 +92,7 @@
         <section class="container-fluid">
             <div class="row">
                 
-                <div class="col-12 col-lg-2 py-1 py-lg-0 text-end text-lg-end d-none d-lg-block side-nav-bg">
+                <div class="col-12 col-lg-2 py-1 py-lg-0 text-end text-lg-end d-none d-lg-block side-nav-bg row-sidebar">
                     
                     {% include 'includes/side_nav.html' %}
                 </div>
@@ -100,7 +100,7 @@
                     {% block content %}
                     {% endblock %}
                 </div>
-                <div class="col-12 col-lg-2 py-1 py-lg-0 text-start text-lg-start d-none d-lg-block market-nav-bg">
+                <div class="col-12 col-lg-2 py-1 py-lg-0 text-start text-lg-start d-none d-lg-block market-nav-bg row-market">
                     {% include 'includes/market_nav.html' %}
                 </div>
             </div>

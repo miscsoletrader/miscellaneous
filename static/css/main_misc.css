@@ -43,7 +43,7 @@ body {
 /*---------------------------------------------- Nav Space Setting ----------*/
 
 .header-container {
-  padding-top: 80px;
+  padding-top: 80px; /* to keep page body right after Nav bar, stop going behind nav bar */
 }
 
 /* .footer-container {
@@ -52,7 +52,7 @@ body {
 
 /*----------------------------------------- Nav Background Setting ----------*/
 .nav-bg {
-  background-color: rgba(255,255,255, 0.95);
+  background-color: rgba(255,255,255, 0.95); /* Navbar background colour WHITE */
   box-shadow: 0 4px 4px -4px rgba(0,0,0,.2); /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
 }
 
@@ -61,29 +61,26 @@ body {
   display: inline-flex;
   width: 80%;
   padding: 0.375rem 0.75rem;
-  align-items: flex-end;
-  /* margin: auto; */
-  /* margin-right: 0.3125rem; */
+  align-items: flex-end; /* Other propertirs: flex-start, center, baseline, stretch */
   font-size: 1rem;
-  font-weight: 400;
-  /* line-height: 1.5; */
-  color: #212529;
-  background-color: #fff;
-  background-clip: padding-box;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #212529; /* Font colour of search bar GREY */
+  background-color: #fff; /* Background colour for search bar WHITE */
+  background-clip: padding-box; /* Other properties: border-box, content-box, lets you control how far a background image or color extends beyond an element’s padding or content. */
   border: none;
-  border-bottom: 1px solid #005826;
+  border-bottom: 1px solid #005826; /* Seach bar bottom line GREEN */
   -webkit-appearance: inherit;
   -moz-appearance: inherit;
   appearance: none;
-  /* border-radius: 0.25rem; */
 }
 
 .nav-search-btn {
   display: inline-flex;
   /* margin: auto; */
-  font-weight: 400;
-  /* line-height: 1.5; */
-  color: #fff;
+  font-weight: 400; /* Thickness of search button */
+  font-size: 1.7rem !important; /* To make search button bigger */
+  color: #005826; /* Search button colour */
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -91,16 +88,17 @@ body {
   -webkit-user-select: inherit;
   -moz-user-select: inherit;
   user-select: none;
-  background-color: #005826;
-  border: 1px solid #005826;
+  /* background-color: #005826; */ /* Search button background colour GREEN */
+  /* border: 1px solid #005826; */ /* Search button Border colour GREEN */
+  border: 0; /* Does not show any border */
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  /* border-radius: 0.25rem; */
+  border-radius: 0rem !important; /* To keep button shape to sqaure */
 }
 
 .nav-search-btn:hover {
-  background-color: #81bd9a;
-  color: #005826;
+  /* background-color: #ee8631; */
+  color: #ee8631; /* Search button HOVER colour ORANGE */
 }
 
 /*----------------------------------------- Nav Account/Bag Setting ----------*/
@@ -109,7 +107,7 @@ body {
   font-weight: bold;
   padding: 0.5rem 0.5rem;
   text-decoration: none;
-  color: #005826 !important;
+  color: #005826 !important; /* Colour for the Account in the NAV GREEN */
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-acc {
@@ -129,6 +127,7 @@ body {
 
 .nav-acc:hover p {
   color: #005826;
+  /* color: #fff; */
 }
 
 .list-item {
@@ -144,7 +143,7 @@ body {
   font-family: 'Lato' !important;
   font-size: 1rem;
   /* font-weight: bold; */
-  color: #005826 !important;
+  color: #005826 !important; /* Font colour of Bag & Account GREEN */
   /* margin-left: 35px;
   margin-right: 35px; */
 }
@@ -177,7 +176,7 @@ body {
 
 /*--------------------------------------------- Logo Fonts Setting ----------*/
 .logo-font {
-  color: #005826;
+  color: #005826; /* Miscellaneous logo colour GREEN */
   font-family: 'Lato';
 }
 
@@ -187,6 +186,11 @@ body {
 }
 
 /*----------------------------------------------- Side Nav Setting ----------*/
+
+.row-sidebar {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
 
 /*----------------- Side Nav Font Setting ----------*/
 
@@ -234,13 +238,19 @@ body {
 }
 
 .side-nav-bg {
-  background-color: #fcfcfc;
+  /* background-color: #fcfcfc; */
+  background-color: #EAECEE;
   -moz-box-shadow: 1px 0 2px -2px #005826;
   -webkit-box-shadow: 1px 0 2px -2px #005826;
   box-shadow: 1px 0 2px -2px #005826; /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
 }
 
 /*--------------------------------------------- Market Nav Setting ----------*/
+
+.row-market {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
 
 /*--------------- Market Nav Font Setting ----------*/
 
@@ -288,7 +298,7 @@ body {
 }
 
 .market-nav-bg {
-  background-color: #fcfcfc;
+  background-color: #EAECEE;
   -moz-box-shadow: -1px 0 2px -2px #005826;
   -webkit-box-shadow: -1px 0 2px -2px #005826;
   box-shadow: -1px 0 2px -2px #005826; /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
