@@ -1,48 +1,46 @@
-/* font-family: 'Roboto', 'Lato', 'Lora', 'Josefin Sans', 'Dancing Script', 'Berkshire Swash', 'Cormorant SC', 'Libre Barcode 39 Text' */
+/* font-family:
+    'Roboto', 'Lato', 'Lora', 'Josefin Sans', 
+    'Dancing Script', 'Berkshire Swash', 
+    'Cormorant SC', 'Libre Barcode 39 Text' 
+*/
+
+/* Colour used:
+    #005826 - Green
+    rgba(255,255,255, 0.95) - Semi transparent White
+    #fff - White
+    #ee8631 - Orange
+    #6c757d - Grey (account Disable)
+    rgb(234, 236, 238) - Bluish White
+    #81bd9a - Light Green
+    #81bd9a - Off White
+    #eaecee - Bluish White
+*/
 
 html {
   height: 100%
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto'; /* Basic Font */
   background-size: cover;
   height: 100%;
-  color: #005826;
-}
-
-/*---------------------------------------- Main Page Fonts Setting ----------*/
-.home-font {
-  font-family: 'Dancing Script';
-  font-size: calc(0.9375rem + 11vw);
-  font-weight: 600;
-  /* line-height: 1.2; */
-  color: #005826;
-}
-@media (min-width: 5120px) {
-  .home-font {
-    font-size: 3.5rem;
-  }
-}
-
-.home-bg {
-  background-image: url("/static/css/media/Miscellaneous_Narrow.jpg"); /* The image used */
+  color: #005826; /* Basic font colour */
 }
 
 /*----------------------------------------------- Nav Icon Setting ----------*/
 
-.navbar-brand-misc {
+.navbar-brand-misc { /* main_misc.html */
   padding-top: .3125rem;
   padding-bottom: .3125rem;
   /* margin-right: 1rem; */
   font-size: 1.25rem;
   text-decoration: none;
-  white-space: nowrap;
+  white-space: nowrap; /* To control how text is handled on the elements, other properties: normal | pre | nowrap | pre-wrap | pre-line */
 }
 
-/*---------------------------------------------- Nav Space Setting ----------*/
+/*----------------------------------------------- Nav Space Setting ----------*/
 
-.header-container {
+.header-container { 
   padding-top: 80px; /* to keep page body right after Nav bar, stop going behind nav bar */
 }
 
@@ -50,14 +48,14 @@ body {
   padding-top: 40px;
 } */
 
-/*----------------------------------------- Nav Background Setting ----------*/
-.nav-bg {
+/*------------------------------------------ Nav Background Setting ----------*/
+.nav-bg { /* main_misc.html */
   background-color: rgba(255,255,255, 0.95); /* Navbar background colour WHITE */
   box-shadow: 0 4px 4px -4px rgba(0,0,0,.2); /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
 }
 
-/*-------------------------------------------- Nav Search Setting ----------*/
-.nav-search {
+/*---------------------------------------------- Nav Search Setting ----------*/
+.nav-search { /* mobile_misc_nav.html & main_misc.html */
   display: inline-flex;
   width: 80%;
   padding: 0.375rem 0.75rem;
@@ -75,7 +73,7 @@ body {
   appearance: none;
 }
 
-.nav-search-btn {
+.nav-search-btn { /* mobile_misc_nav.html & main_misc.html */
   display: inline-flex;
   /* margin: auto; */
   font-weight: 400; /* Thickness of search button */
@@ -101,8 +99,8 @@ body {
   color: #ee8631; /* Search button HOVER colour ORANGE */
 }
 
-/*----------------------------------------- Nav Account/Bag Setting ----------*/
-.nav-acc {
+/*---------------------------------------- Nav Account/Bag Setting ----------*/
+.nav-acc { /* main_nav.html & mobile_misc_nav.html & main_nav.html */
   display: block;
   font-weight: bold;
   padding: 0.5rem 0.5rem;
@@ -136,16 +134,14 @@ body {
 
 .dropdown-item:hover {
   color: #fff;
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(234, 236, 238);
 }
 
-.menu-font {
+.menu-font { /* main_misc.html & main_nav.html */
   font-family: 'Lato' !important;
   font-size: 1rem;
   /* font-weight: bold; */
   color: #005826 !important; /* Font colour of Bag & Account GREEN */
-  /* margin-left: 35px;
-  margin-right: 35px; */
 }
 
 .menu-font:hover>span{
@@ -164,18 +160,18 @@ body {
   color: #ee8631 !important;
 }
 
-.nav-product {
+/* .nav-product {
   display: block;
   text-decoration: none;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-}
+} */
 
-.nav-margin{
+.nav-margin { /* main_nav.html */
   margin-left: auto;
 }
 
 /*--------------------------------------------- Logo Fonts Setting ----------*/
-.logo-font {
+.logo-font { /* main_misc.html & main_nav.html & mobile_misc_nav.html */
   color: #005826; /* Miscellaneous logo colour GREEN */
   font-family: 'Lato';
 }
@@ -185,9 +181,9 @@ body {
   font-size: larger;
 }
 
-/*----------------------------------------------- Side Nav Setting ----------*/
+/*------------------------------- Side Nav Setting (side_nav.html) ---------*/
 
-.row-sidebar {
+.row-sidebar { /* main_misc.html - Bring default row padding to 0 */
   padding-right: 0 !important;
   padding-left: 0 !important;
 }
@@ -210,7 +206,6 @@ body {
 
 .side-nav-list {
   display: block;
-  /* font-weight: bold; */
   padding: 1rem 1rem;
   text-decoration: none;
   color: #005826 !important;
@@ -229,7 +224,6 @@ body {
 .side-nav-list:hover i {
   color: #ee8631;
   font-size: large;
-  /* background-color: rgba(255,255,255,.2); */
 }
 
 .side-nav-list:hover {
@@ -238,16 +232,15 @@ body {
 }
 
 .side-nav-bg {
-  /* background-color: #fcfcfc; */
-  background-color: #EAECEE;
+  background-color: #eaecee; /* Background colour for Side nav [RGB (234, 236, 238)] */
   -moz-box-shadow: 1px 0 2px -2px #005826;
   -webkit-box-shadow: 1px 0 2px -2px #005826;
   box-shadow: 1px 0 2px -2px #005826; /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
 }
 
-/*--------------------------------------------- Market Nav Setting ----------*/
+/*--------------------------- Market Nav Setting (market_nav.html) ---------*/
 
-.row-market {
+.row-market { /* main_misc.html - Bring default row padding to 0 */
   padding-right: 0 !important;
   padding-left: 0 !important;
 }
@@ -270,7 +263,6 @@ body {
 
 .market-nav-list {
   display: block;
-  /* font-weight: bold; */
   padding: 1rem 1rem;
   text-decoration: none;
   color: #005826 !important;
@@ -288,8 +280,6 @@ body {
 
 .market-nav-list:hover i {
   color: #ee8631;
-  /* font-size: large; */
-  /* background-color: rgba(255,255,255,.2); */
 }
 
 .market-nav-list:hover {
@@ -298,13 +288,13 @@ body {
 }
 
 .market-nav-bg {
-  background-color: #EAECEE;
+  background-color: #eaecee;
   -moz-box-shadow: -1px 0 2px -2px #005826;
   -webkit-box-shadow: -1px 0 2px -2px #005826;
   box-shadow: -1px 0 2px -2px #005826; /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
 }
 
-/*--------------------------------------------- Bottom Nav Setting ----------*/
+/*--------------------------- Bottom Nav Setting (main_misc.html) ---------*/
 
 /*--------------- Bottom Nav Font Setting ----------*/
 
@@ -314,57 +304,50 @@ body {
   font-size: 1.2rem;
 }
 
-.bottom-nav-font:hover {
-  color: #ee8631;
-  font-size: larger;
-  background-color: #fff;
-}
-
 /*------------ Bottom Nav Display Setting ----------*/
 
-.bottom-nav-list {
+.bottom-nav {
   display: block;
-  /* font-weight: bold; */
   padding: 1rem 1rem;
   text-decoration: none;
   color: #005826 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  .bottom-nav-list {
+  .bottom-nav {
     transition: none;
   }
 }
-.bottom-nav-list.disabled {
+.bottom-nav.disabled {
   color: #6c757d;
   pointer-events: none;
   cursor: default;
 }
 
-.bottom-nav-list:hover i {
+.bottom-nav:hover i {
   color: #ee8631;
   font-size: large;
   /* background-color: rgba(255,255,255,.2); */
 }
 
-.bottom-nav-list:hover {
+.bottom-nav:hover {
   color: #005826;
   background-color: #ffffff;
 }
 
 .bottom-nav-bg {
-  background-color: #fcfcfc;
+  background-color: rgba(255,255,255, 0.95);
   -moz-box-shadow: 0 -1px 2px -2px #005826;
   -webkit-box-shadow: 0 -1px 2px -2px #005826;
   box-shadow: 0 -1px 2px -2px #005826; /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
 }
 
 /*---------------------------------------- Home Background Setting ----------*/
-.home-back {
+/* .home-back {
   background-color: #005826;
-}
+} */
 
-/*-------------------------------------------- Home Button Setting ----------*/
-.home-btn {
+/*------------------------------------------------- Button Setting ----------*/
+.misc-btn {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -381,27 +364,47 @@ body {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: 0.25rem;
-  /* transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.home-btn-lg, .home-btn-group-lg > .home-btn {
+.misc-btn-lg, .misc-btn-group-lg > .misc-btn { /* Adjust button setting larger than normal button */
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
 }
 
-.home-btn > .home-btn-sm, .home-btn-group-sm {
+.misc-btn > .misc-btn-sm, .misc-btn-group-sm { /* Adjust button setting smaller than normal button */
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
 }
 
-.home-btn:hover {
-  background-color: #81bd9a;
+.misc-btn:hover {
+  background-color: #005826;
   color: #fff;
 }
 
+/*---------------------------------------------- Home Page Setting ----------*/
+/*--------------------------- Font Setting ----------*/
+.home-font { /* home.html */
+  font-family: 'Dancing Script';
+  font-size: calc(0.9375rem + 11vw); /* Font size change according to screen size */
+  font-weight: 600; /* Font thickness */
+  /* line-height: 1.2; */
+  color: #005826; /* Font colour */
+}
+@media (min-width: 5120px) {
+  .home-font {
+    font-size: 3.5rem;
+  }
+}
+
+.home-bg { /* home.html */
+  background-image: url("/static/css/media/Miscellaneous_Narrow.jpg"); /* The image used */
+}
+
 /*-------------------------------------------- Contact page Setting ----------*/
+/*--------------------------- Font Setting ----------*/
 .contact-font {
   font-size: calc(0.9375rem + 1vw);
   /* font-size: 1rem; */
