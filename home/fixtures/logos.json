@@ -1,0 +1,119 @@
+[
+  {
+    "pk": 1,
+    "model": "home.logos",
+    "fields": {
+      "name": "harris",
+      "friendly_name": "L. G. Harris",
+      "image": "/media/harris.png"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "home.logos",
+    "fields": {
+      "name": "antiquax",
+      "friendly_name": "Antiquax",
+      "image": "/media/antiquax.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "home.logos",
+    "fields": {
+      "name": "awtools",
+      "friendly_name": "A. W. Tools",
+      "image": "/media/awtools.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "home.logos",
+    "fields": {
+      "name": "axusdecor",
+      "friendly_name": "Axus Decor",
+      "image": "/media/axusdecor.png"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "home.logos",
+    "fields": {
+      "name": "command",
+      "friendly_name": "Command",
+      "image": "/media/command.png"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "home.logos",
+    "fields": {
+      "name": "dcfix",
+      "friendly_name": "D-C-Fix",
+      "image": "/media/dcfix.jpg"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "home.logos",
+    "fields": {
+      "name": "dulux",
+      "friendly_name": "Dulux",
+      "image": "/media/dulux.png"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "home.logos",
+    "fields": {
+      "name": "faren",
+      "friendly_name": "Faren Chem",
+      "image": "/media/faren.jpg"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "home.logos",
+    "fields": {
+      "name": "ronseal",
+      "friendly_name": "Ronseal",
+      "image": "/media/ronseal.jpg"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "home.logos",
+    "fields": {
+      "name": "rustins",
+      "friendly_name": "Rustins",
+      "image": "/media/rustins.png"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "home.logos",
+    "fields": {
+      "name": "scholl",
+      "friendly_name": "scholl",
+      "image": "/media/scholl.jpg"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "home.logos",
+    "fields": {
+      "name": "sellotape",
+      "friendly_name": "Sellotape",
+      "image": "/media/sellotape.jpg"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "home.logos",
+    "fields": {
+      "name": "shoestring",
+      "friendly_name": "ShoeString",
+      "image": "/media/shoestring.png"
+    }
+  }
+]

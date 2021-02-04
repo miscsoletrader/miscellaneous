@@ -28,6 +28,22 @@
                         <a href="{% url 'contact' %}" class="misc-btn misc-btn-lg rounded-2 py-3">Coming Soon......</a>
                     </h4>
                 </div>
+                <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                    <div class="card image-container my-5">
+                       {% if logos.image %}
+                           <a href="" target="_blank">
+                               <img class="card-img-top img-fluid" src="{{ logos.image }}" alt="{{ logos.friendly_name }}">
+                           </a>
+                       {% else %}
+                           <a href="">
+                               <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ logos.friendly_name }}">
+                           </a>
+                       {% endif %}
+                    </div>   
+               </div>
+                <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                    {{ logos }}
+                </div>
                 <div>
                     <h1 style="font-family: Roboto;">Roboto</h1>
                     <h1 style="font-family: Lato;">Lato</h1>
