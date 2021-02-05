@@ -10,6 +10,7 @@ def home(request):
     context = {
         'logos': logos,
     }
+
     return render(request, 'home.html', context)
 
 

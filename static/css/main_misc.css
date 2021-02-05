@@ -6,14 +6,14 @@
 
 /* Colour used:
     #005826 - Green
+    rgb(0,88,38) - Green
     rgba(255,255,255, 0.95) - Semi transparent White
     #fff - White
     #ee8631 - Orange
     #6c757d - Grey (account Disable)
     rgb(234, 236, 238) - Bluish White
-    #81bd9a - Light Green
-    #81bd9a - Off White
     #eaecee - Bluish White
+    #81bd9a - Light Green
 */
 
 html {
@@ -388,19 +388,53 @@ body {
 /*--------------------------- Font Setting ----------*/
 .home-font { /* home.html */
   font-family: 'Dancing Script';
-  font-size: calc(0.9375rem + 11vw); /* Font size change according to screen size */
-  font-weight: 600; /* Font thickness */
-  /* line-height: 1.2; */
-  color: #005826; /* Font colour */
+  font-size: calc(0.9375rem + 2vw); /* Font size change according to screen size */
+  /* font-size: 3.75rem; */
+  font-weight: bold;
+  /*font-weight: 600;*/ /* Font thickness */
+  line-height: 1.5;
+  color: #005826; /* Font colour */  
 }
 @media (min-width: 5120px) {
   .home-font {
-    font-size: 3.5rem;
+    font-size: 3.75rem;
   }
 }
 
 .home-bg { /* home.html */
   background-image: url("/static/css/media/Miscellaneous_Narrow.jpg"); /* The image used */
+}
+
+.home-logo-font { /* home.html */
+  font-family: 'Josefin Sans';
+  font-size: calc(0.4375rem + 0.5vw); /* Font size change according to screen size */
+  /* font-size: 1.25rem; */
+  font-weight: bold; /* Font thickness */
+  line-height: 1.5;
+  color: #005826; /* Font colour */ 
+  text-transform: uppercase;
+}
+
+/*-------------- Logo Display Card Setting ----------*/
+.card-home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  /* background-clip: border-box; */
+  /* border: 1px solid #005826; */
+  border-radius: 15px;
+  width: 90%;
+  height: 80%;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0,88,38, .9) !important;
 }
 
 /*-------------------------------------------- Contact page Setting ----------*/

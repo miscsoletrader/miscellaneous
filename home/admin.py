@@ -1,6 +1,4 @@
-""" Import admin object from django.contrib """
 from django.contrib import admin
-""" Import Logo model """
 from .models import Logo
 
 
@@ -9,6 +7,7 @@ class LogoAdmin(admin.ModelAdmin):
         'name',
         'friendly_name',
         'image',
+        'image_url',
     )
 
     ordering = ('name',)

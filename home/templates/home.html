@@ -14,35 +14,33 @@
 
 
 {% block content %}
-    <div class="container header-container">
+    <div class="container">
         <div class="row h-100">
-            
             <div class="col text-center my-auto">
-                
-                <h1 class="home-font">
-                    Miscellaneous
+                <h1 class="home-font py-4">
+                    Brands we Stock
                 </h1>
-                
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'contact' %}" class="misc-btn misc-btn-lg rounded-2 py-3">Coming Soon......</a>
-                    </h4>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                    <div class="card image-container my-5">
-                       {% if logos.image %}
-                           <a href="" target="_blank">
-                               <img class="card-img-top img-fluid" src="{{ logos.image }}" alt="{{ logos.friendly_name }}">
-                           </a>
-                       {% else %}
-                           <a href="">
-                               <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ logos.friendly_name }}">
-                           </a>
-                       {% endif %}
-                    </div>   
-               </div>
-                <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                    {{ logos }}
+                <div class="row">
+                    {% for logo in logos %}
+                        <div class=" col-6 col-lg-4 col-xl-3">
+                            <div class="card-home py-4 shadow-lg my-auto mx-auto">
+                                <div class="card-img-top">
+                                    {% if logo.image %}
+                                        <a href="">
+                                            <img class="img-fluid" src="{{ logo.image.url }}" alt="{{ logo.friendly_name }}">
+                                        </a>
+                                    {% else %}
+                                        <a href="">
+                                            <img class="img-fluid" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ logo.friendly_name }}">
+                                        </a>
+                                    {% endif %}
+                                </div>
+                                <div class="card-body home-logo-font">
+                                    {{ logo.friendly_name }}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
                 </div>
                 <div>
                     <h1 style="font-family: Roboto;">Roboto</h1>
@@ -55,7 +53,6 @@
                     <h1 style="font-family: Libre Barcode 39 Text;">Libre Barcode 39 Text</h1>
                 </div>
             </div>
-            
         </div>
     </div>
 {% endblock %}
