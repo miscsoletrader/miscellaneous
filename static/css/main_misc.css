@@ -181,6 +181,10 @@ body {
   font-size: larger;
 }
 
+.section-bg {
+  background-image: url("/static/css/media/background.jpg");
+}
+
 /*------------------------------- Side Nav Setting (side_nav.html) ---------*/
 
 .row-sidebar { /* main_misc.html - Bring default row padding to 0 */

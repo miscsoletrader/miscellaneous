@@ -91,18 +91,18 @@
         {% endblock %}
 
         
-        <section class="container-fluid">
+        <section class="container-fluid section-bg">
             <div class="row">
                 
-                <div class="col-12 col-lg-2 py-1 py-lg-0 text-end text-lg-end d-none d-lg-block side-nav-bg row-sidebar">
+                <div class="col-12 col-lg-1 py-1 py-lg-0 text-end text-lg-end d-none d-lg-block side-nav-bg row-sidebar">
                     
                     {% include 'includes/side_nav.html' %}
                 </div>
-                <div class="col-12 col-lg-8 my-auto py-1 py-lg-0 text-center">
+                <div class="col-12 col-lg-10 my-auto py-1 py-lg-0 text-center">
                     {% block content %}
                     {% endblock %}
                 </div>
-                <div class="col-12 col-lg-2 py-1 py-lg-0 text-start text-lg-start d-none d-lg-block market-nav-bg row-market">
+                <div class="col-12 col-lg-1 py-1 py-lg-0 text-start text-lg-start d-none d-lg-block market-nav-bg row-market">
                     {% include 'includes/market_nav.html' %}
                 </div>
             </div>
