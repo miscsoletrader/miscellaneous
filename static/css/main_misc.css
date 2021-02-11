@@ -14,6 +14,7 @@
     rgb(234, 236, 238) - Bluish White
     #eaecee - Bluish White
     #81bd9a - Light Green
+    #012304 - Bottle Green
 */
 
 html {
@@ -105,7 +106,7 @@ body {
   font-weight: bold;
   padding: 0.5rem 0.5rem;
   text-decoration: none;
-  color: #005826 !important; /* Colour for the Account in the NAV GREEN */
+  color: #005826; /* Colour for the Account in the NAV GREEN */
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-acc {
@@ -125,7 +126,66 @@ body {
 
 .nav-acc:hover p {
   color: #005826;
-  /* color: #fff; */
+  
+}
+
+/*------------------ Theme Button Setting ----------*/
+
+.nav-theme { /* main_nav.html & mobile_misc_nav.html & main_nav.html */
+  display: block;
+  font-weight: bold;
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+  color: #005826; /* Colour for the Account in the NAV GREEN */
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav-theme {
+    transition: none;
+  }
+}
+.nav-theme.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
+}
+
+.nav-theme:hover i {
+  color: #ee8631;
+  font-size: large;
+}
+
+.nav-theme:hover p {
+  color: #005826;
+  
+}
+
+.badge-dark {
+  display: inline-block;
+  padding: .35em .65em;
+  font-size: .75em;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  background-color: #012304;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 1rem;
+}
+
+.badge-light {
+  display: inline-block;
+  padding: .35em .65em;
+  font-size: .75em;
+  font-weight: 700;
+  line-height: 1;
+  color: #005826;
+  background-color: #fff;
+  border: 0.5px solid #005826;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 1rem;
 }
 
 .list-item {
@@ -134,7 +194,7 @@ body {
 
 .dropdown-item:hover {
   color: #fff;
-  background-color: rgb(234, 236, 238);
+  background-color: #005826;
 }
 
 .menu-font { /* main_misc.html & main_nav.html */
@@ -153,7 +213,7 @@ body {
   font-family: 'Lato' !important;
   /* font-size: 1.125rem; */
   font-weight: bold;
-  color: #005826 !important;
+  color: #005826;
 }
 
 .dropdown-item:hover>span {
@@ -182,7 +242,8 @@ body {
 }
 
 .section-bg {
-  background-image: url("/static/css/media/background.jpg");
+  /* background-image: url("/media/background.jpg"); */
+  background-color: #012304;
 }
 
 /*------------------------------- Side Nav Setting (side_nav.html) ---------*/
@@ -212,32 +273,50 @@ body {
   display: block;
   padding: 1rem 1rem;
   text-decoration: none;
-  color: #005826 !important;
+  color: #fff;
 }
 @media (prefers-reduced-motion: reduce) {
   .side-nav-list {
     transition: none;
   }
 }
-.side-nav-list.disabled {
-  color: #6c757d;
-  pointer-events: none;
-  cursor: default;
+  .side-nav-list.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
 }
 
 .side-nav-list:hover i {
-  color: #ee8631;
+  /* color: #ee8631; */
+  color: #012304;
   font-size: large;
 }
 
 .side-nav-list:hover {
-  color: #005826;
-  background-color: #ffffff;
+  color: #012304;
+  background-color: #fff;
+}
+
+@media (max-width: 992px) {
+  .side-nav-list {
+    color: #005826;
+  }
+  
+  .side-nav-list:hover i {
+    color: #fff;
+    font-size: large;
+  }
+  
+  .side-nav-list:hover {
+    color: #fff;
+    background-color: #005826;
+  } 
 }
 
 .side-nav-bg {
-  background-color: #eaecee; /* Background colour for Side nav [RGB (234, 236, 238)] */
-  -moz-box-shadow: 1px 0 2px -2px #005826;
+  /*background-color: #eaecee; /* Background colour for Side nav [RGB (234, 236, 238)] */
+  /* background-color: #fff; */
+  /*-moz-box-shadow: 1px 0 2px -2px #005826;
   -webkit-box-shadow: 1px 0 2px -2px #005826;
   box-shadow: 1px 0 2px -2px #005826; /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
 }
@@ -269,7 +348,7 @@ body {
   display: block;
   padding: 1rem 1rem;
   text-decoration: none;
-  color: #005826 !important;
+  color: #fff;
 }
 @media (prefers-reduced-motion: reduce) {
   .market-nav-list {
@@ -283,16 +362,36 @@ body {
 }
 
 .market-nav-list:hover i {
-  color: #ee8631;
+  /* color: #ee8631; */
+  color: #012304;
 }
 
 .market-nav-list:hover {
-  color: #005826;
-  background-color: #ffffff;
+  color: #012304;
+  background-color: #fff;
 }
 
+@media (max-width: 992px) {
+  .market-nav-list {
+    color: #005826;
+  }
+  
+  .market-nav-list:hover i {
+    color: #ee8631;
+  }
+
+  .market-nav-list:hover {
+    color: #ee8631;
+  }
+
+  .market-nav-font:hover {
+    color: #ee8631;
+    font-size: large;
+  }
+}
 .market-nav-bg {
-  background-color: #eaecee;
+  /* background-color: #fff; */
+  /*background-color: #eaecee;
   -moz-box-shadow: -1px 0 2px -2px #005826;
   -webkit-box-shadow: -1px 0 2px -2px #005826;
   box-shadow: -1px 0 2px -2px #005826; /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
@@ -397,7 +496,8 @@ body {
   font-weight: bold;
   /*font-weight: 600;*/ /* Font thickness */
   line-height: 1.5;
-  color: #005826; /* Font colour */  
+  /* color: #005826; Font colour   */
+  color: #fff;
 }
 @media (min-width: 5120px) {
   .home-font {
@@ -437,8 +537,16 @@ body {
   object-fit: cover;
 }
 
+.card-body {
+  background-color: #012304;
+  color: #005826;
+  border: 1px solid #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
 .shadow-lg {
-  box-shadow: 0 1rem 3rem rgba(0,88,38, .9) !important;
+  /* box-shadow: 0 1rem 2rem rgba(0,88,38, .9) !important; */
+  /* box-shadow: 0.5rem 0.5rem 1rem 0 rgba(255,255,255,.4) !important; Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
 }
 
 /*-------------------------------------------- Contact page Setting ----------*/
@@ -448,7 +556,8 @@ body {
   /* font-size: 1rem; */
   font-family: 'Lato' !important;
   /* line-height: 1.2; */
-  color: #005826;
+  /* color: #005826; */
+  color: #fff;
   padding-top: 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -461,6 +570,7 @@ body {
 
 .contact-list {
   color: #005826;
+  /* color: #fff; */
   /* font-size: calc(0.5625rem + 1vw); */
   font-size: 1.25rem;
   font-family: 'Josefin Sans';
