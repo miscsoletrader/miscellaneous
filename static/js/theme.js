@@ -1,14 +1,20 @@
-const btn = document.querySelector(".btn-toggle");
+const themebtn = document.getElementById('theme');
+const sectionbg = document.body;
 
-btn.addEventListener("click", function () {
-  document.body.classList.toggle("dark-theme");
+toggle.addEventListener('input', e => {
+    const isChecked = e.target.checked;
+
+    if (isChecked) {
+        body.classList.add('dark');
+    } else {
+        body.classList.remove('dark');
+    }
 });
 
-function themeFunction() {
-    var element = document.getElementsByClass("badge-light");
-    element.classList.toggle("badge-dark");
-  }
+// function myFunction() {
+//   var themebtn = document.getElementById("theme");
 
-  $("a").click(function(){
-    $("span").toggleClass("main");
-  });
+//   var sectionbg = document.getElementByClass("section-bg")
+
+//   if ()
+// }

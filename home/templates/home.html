@@ -23,8 +23,8 @@
                 <div class="row">
                     {% for logo in logos %}
                         <div class=" col-6 col-lg-4 col-xl-3">
-                            <div class="card-home py-4 shadow-lg my-auto mx-auto">
-                                <div class="card-img-top">
+                            <div class="card-home py-4 my-auto mx-auto">
+                                <div class="card-img-top shadow-lg">
                                     {% if logo.image %}
                                         <a href="">
                                             <img class="img-fluid" src="{{ logo.image.url }}" alt="{{ logo.friendly_name }}">

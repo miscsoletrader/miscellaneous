@@ -15,6 +15,9 @@
     #eaecee - Bluish White
     #81bd9a - Light Green
     #012304 - Bottle Green
+    rgb(1, 35, 4) = Bottle Green
+    #F5FFFA - Mint Cream
+    rgb(245,255,250) - Mint Cream
 */
 
 html {
@@ -25,7 +28,18 @@ body {
   font-family: 'Roboto'; /* Basic Font */
   background-size: cover;
   height: 100%;
+  background-color:  rgb(245,255,250);
   color: #005826; /* Basic font colour */
+}
+
+.theme-light {
+  --back-color:  rgb(245,255,250);
+  --font-color: #005826; /* Basic font colour */
+}
+
+.theme-dark {
+  --back-color: #012304;
+  --font-color: #f5fffa;
 }
 
 /*----------------------------------------------- Nav Icon Setting ----------*/
@@ -51,7 +65,8 @@ body {
 
 /*------------------------------------------ Nav Background Setting ----------*/
 .nav-bg { /* main_misc.html */
-  background-color: rgba(255,255,255, 0.95); /* Navbar background colour WHITE */
+  background-color: rgba(245,255,250, 0.95); /* Navbar background colour MINT CREAM */
+  /* background-color: var(--back-color); */
   box-shadow: 0 4px 4px -4px rgba(0,0,0,.2); /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
 }
 
@@ -64,8 +79,10 @@ body {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
-  color: #212529; /* Font colour of search bar GREY */
-  background-color: #fff; /* Background colour for search bar WHITE */
+  color: #005826; /* Font colour of search bar GREY */
+  background-color: transparent; /* Background colour for search bar WHITE */
+  /* color: var(--font-color);
+  background-color: var(--back-color); */
   background-clip: padding-box; /* Other properties: border-box, content-box, lets you control how far a background image or color extends beyond an element’s padding or content. */
   border: none;
   border-bottom: 1px solid #005826; /* Seach bar bottom line GREEN */
@@ -80,6 +97,7 @@ body {
   font-weight: 400; /* Thickness of search button */
   font-size: 1.7rem !important; /* To make search button bigger */
   color: #005826; /* Search button colour */
+  /* color: var(--font-color); */
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -87,7 +105,8 @@ body {
   -webkit-user-select: inherit;
   -moz-user-select: inherit;
   user-select: none;
-  /* background-color: #005826; */ /* Search button background colour GREEN */
+  background-color: transparent; /* Search button background colour MINT CREAM */
+  /* background-color: var(--back-color); */
   /* border: 1px solid #005826; */ /* Search button Border colour GREEN */
   border: 0; /* Does not show any border */
   padding: 0.375rem 0.75rem;
@@ -98,6 +117,7 @@ body {
 .nav-search-btn:hover {
   /* background-color: #ee8631; */
   color: #ee8631; /* Search button HOVER colour ORANGE */
+  /* color: var(--font-color); */
 }
 
 /*---------------------------------------- Nav Account/Bag Setting ----------*/
@@ -107,6 +127,7 @@ body {
   padding: 0.5rem 0.5rem;
   text-decoration: none;
   color: #005826; /* Colour for the Account in the NAV GREEN */
+  /* color: var(--font-color); */
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-acc {
@@ -121,12 +142,13 @@ body {
 
 .nav-acc:hover i {
   color: #ee8631;
+  /* color: var(--font-color); */
   font-size: large;
 }
 
 .nav-acc:hover p {
   color: #005826;
-  
+  /* color: var(--font-color); */  
 }
 
 /*------------------ Theme Button Setting ----------*/
@@ -137,6 +159,7 @@ body {
   padding: 0.5rem 0.5rem;
   text-decoration: none;
   color: #005826; /* Colour for the Account in the NAV GREEN */
+  /* color: var(--font-color); */
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-theme {
@@ -145,18 +168,20 @@ body {
 }
 .nav-theme.disabled {
   color: #6c757d;
+  /* color: var(--font-color); */
   pointer-events: none;
   cursor: default;
 }
 
 .nav-theme:hover i {
   color: #ee8631;
+  /* color: var(--font-color); */
   font-size: large;
 }
 
 .nav-theme:hover p {
   color: #005826;
-  
+  /* color: var(--font-color); */  
 }
 
 .badge-dark {
@@ -166,7 +191,9 @@ body {
   font-weight: 700;
   line-height: 1;
   color: #fff;
-  background-color: #012304;
+  /* color: var(--font-color); */
+  /* background-color: var(--back-color); */
+  background-color: #005826;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -180,6 +207,8 @@ body {
   font-weight: 700;
   line-height: 1;
   color: #005826;
+  /* color: var(--font-color); */
+  /* background-color: var(--back-color); */
   background-color: #fff;
   border: 0.5px solid #005826;
   text-align: center;
@@ -192,9 +221,16 @@ body {
   list-style-type: none; /* to get-rid off bullet point from side bar menu item(s) */
 }
 
+.dropdown-menu {
+  background-color: #F5FFFA !important;
+  /* background-color: var(--back-color); */
+}
+
 .dropdown-item:hover {
-  color: #fff;
+  color: #f5fffa;
   background-color: #005826;
+  /* color: var(--font-color);
+  background-color: var(--back-color); */
 }
 
 .menu-font { /* main_misc.html & main_nav.html */
@@ -202,10 +238,12 @@ body {
   font-size: 1rem;
   /* font-weight: bold; */
   color: #005826 !important; /* Font colour of Bag & Account GREEN */
+  /* color: var(--font-color); */
 }
 
 .menu-font:hover>span{
   color: #ee8631 !important;
+  /* color: var(--font-color); */
   /* font-size: large; */
 }
 
@@ -214,10 +252,12 @@ body {
   /* font-size: 1.125rem; */
   font-weight: bold;
   color: #005826;
+  /* color: var(--font-color); */
 }
 
 .dropdown-item:hover>span {
   color: #ee8631 !important;
+  /* color: var(--font-color); */
 }
 
 /* .nav-product {
@@ -233,17 +273,18 @@ body {
 /*--------------------------------------------- Logo Fonts Setting ----------*/
 .logo-font { /* main_misc.html & main_nav.html & mobile_misc_nav.html */
   color: #005826; /* Miscellaneous logo colour GREEN */
+  /* color: var(--font-color); */
   font-family: 'Lato';
 }
 
 .logo-font:hover strong {
   color: #ee8631;
+  /* color: var(--font-color); */
   font-size: larger;
 }
 
-.section-bg {
-  /* background-image: url("/media/background.jpg"); */
-  background-color: #012304;
+.logo-shadow {
+  text-shadow: 2px 2px 7px #005826; /* Horizontal Shadow, Vertical Shadow, Blur radius, Colour */
 }
 
 /*------------------------------- Side Nav Setting (side_nav.html) ---------*/
@@ -257,14 +298,17 @@ body {
 
 .side-nav-font {
   color: #005826;
+  /* color: var(--font-color); */
   font-family: 'Roboto';
   font-size: 1.2rem;
 }
 
 .side-nav-font:hover {
   color: #ee8631;
+  /* color: var(--font-color); */
+  /* background-color: var(--back-color); */
   font-size: larger;
-  background-color: #fff;
+  background-color: #005826;
 }
 
 /*-------------- Side Nav Display Setting ----------*/
@@ -273,7 +317,8 @@ body {
   display: block;
   padding: 1rem 1rem;
   text-decoration: none;
-  color: #fff;
+  color: #005826;
+  /* color: var(--font-color); */
 }
 @media (prefers-reduced-motion: reduce) {
   .side-nav-list {
@@ -282,43 +327,42 @@ body {
 }
   .side-nav-list.disabled {
     color: #6c757d;
+    /* color: var(--font-color); */
     pointer-events: none;
     cursor: default;
 }
 
 .side-nav-list:hover i {
-  /* color: #ee8631; */
-  color: #012304;
+  color: #f5fffa;
+  /* color: var(--font-color); */
   font-size: large;
 }
 
 .side-nav-list:hover {
-  color: #012304;
-  background-color: #fff;
+  color: #fff;
+  /* color: var(--font-color); */
+  /* background-color: var(--back-color); */
+  background-color: #005826;
 }
 
 @media (max-width: 992px) {
   .side-nav-list {
     color: #005826;
+    /* color: var(--font-color); */
   }
   
   .side-nav-list:hover i {
-    color: #fff;
+    color: #f5fffa;
+    /* color: var(--font-color); */
     font-size: large;
   }
   
   .side-nav-list:hover {
-    color: #fff;
+    color: #f5fffa;
+    /* color: var(--font-color); */
+    /* background-color: var(--back-color); */
     background-color: #005826;
   } 
-}
-
-.side-nav-bg {
-  /*background-color: #eaecee; /* Background colour for Side nav [RGB (234, 236, 238)] */
-  /* background-color: #fff; */
-  /*-moz-box-shadow: 1px 0 2px -2px #005826;
-  -webkit-box-shadow: 1px 0 2px -2px #005826;
-  box-shadow: 1px 0 2px -2px #005826; /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
 }
 
 /*--------------------------- Market Nav Setting (market_nav.html) ---------*/
@@ -332,14 +376,17 @@ body {
 
 .market-nav-font {
   color: #005826;
+  /* color: var(--font-color); */
   font-family: 'Roboto';
   font-size: 1.2rem;
 }
 
 .market-nav-font:hover {
-  color: #ee8631;
+  color: #f5fffa;
+  /* color: var(--font-color); */
+  /* background-color: var(--back-color); */
   font-size: larger;
-  background-color: #fff;
+  /* background-color: rgba(245,255,250, 0.95); */
 }
 
 /*------------ Market Nav Display Setting ----------*/
@@ -348,7 +395,8 @@ body {
   display: block;
   padding: 1rem 1rem;
   text-decoration: none;
-  color: #fff;
+  color: #005826;
+  /* color: var(--font-color); */
 }
 @media (prefers-reduced-motion: reduce) {
   .market-nav-list {
@@ -357,44 +405,43 @@ body {
 }
 .market-nav-list.disabled {
   color: #6c757d;
+  /* color: var(--font-color); */
   pointer-events: none;
   cursor: default;
 }
 
 .market-nav-list:hover i {
-  /* color: #ee8631; */
-  color: #012304;
+  color: #F5FFFA;
+  /* color: var(--font-color); */
 }
 
 .market-nav-list:hover {
-  color: #012304;
-  background-color: #fff;
+  color: #f5fffa;
+  /* color: var(--font-color); */
+  /* background-color: var(--back-color); */
+  background-color: #005826;
 }
 
 @media (max-width: 992px) {
   .market-nav-list {
     color: #005826;
+    /* color: var(--font-color); */
   }
   
   .market-nav-list:hover i {
-    color: #ee8631;
+    color: #f5fffa;
+    /* color: var(--font-color); */
   }
 
-  .market-nav-list:hover {
+  /* .market-nav-list:hover {
     color: #ee8631;
-  }
+  } */
 
   .market-nav-font:hover {
-    color: #ee8631;
+    color: #f5fffa;
+    /* color: var(--font-color); */
     font-size: large;
   }
-}
-.market-nav-bg {
-  /* background-color: #fff; */
-  /*background-color: #eaecee;
-  -moz-box-shadow: -1px 0 2px -2px #005826;
-  -webkit-box-shadow: -1px 0 2px -2px #005826;
-  box-shadow: -1px 0 2px -2px #005826; /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
 }
 
 /*--------------------------- Bottom Nav Setting (main_misc.html) ---------*/
@@ -403,6 +450,7 @@ body {
 
 .bottom-nav-font {
   color: #005826;
+  /* color: var(--font-color); */
   font-family: 'Lato';
   font-size: 1.2rem;
 }
@@ -414,6 +462,7 @@ body {
   padding: 1rem 1rem;
   text-decoration: none;
   color: #005826 !important;
+  /* color: var(--font-color); */
 }
 @media (prefers-reduced-motion: reduce) {
   .bottom-nav {
@@ -422,23 +471,28 @@ body {
 }
 .bottom-nav.disabled {
   color: #6c757d;
+  /* color: var(--font-color); */
   pointer-events: none;
   cursor: default;
 }
 
 .bottom-nav:hover i {
   color: #ee8631;
+  /* color: var(--font-color); */
   font-size: large;
-  /* background-color: rgba(255,255,255,.2); */
+  background-color: rgba(245,255,250,.95);
 }
 
 .bottom-nav:hover {
   color: #005826;
-  background-color: #ffffff;
+  /* color: var(--font-color); */
+  /* background-color: var(--back-color); */
+  background-color: #f5fffa;
 }
 
 .bottom-nav-bg {
-  background-color: rgba(255,255,255, 0.95);
+  background-color: rgba(245,255,250, 0.95);
+  /* background-color: var(--back-color); */
   -moz-box-shadow: 0 -1px 2px -2px #005826;
   -webkit-box-shadow: 0 -1px 2px -2px #005826;
   box-shadow: 0 -1px 2px -2px #005826; /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
@@ -463,6 +517,8 @@ body {
   -moz-user-select: none;
   user-select: none;
   background-color: transparent;
+  /* color: var(--font-color); */
+  /* background-color: var(--back-color); */
   border: 1px solid #005826;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
@@ -484,20 +540,20 @@ body {
 
 .misc-btn:hover {
   background-color: #005826;
+  /* color: var(--font-color); */
+  /* background-color: var(--back-color); */
   color: #fff;
 }
 
 /*---------------------------------------------- Home Page Setting ----------*/
 /*--------------------------- Font Setting ----------*/
 .home-font { /* home.html */
-  font-family: 'Dancing Script';
+  font-family: 'Berkshire Swash';
   font-size: calc(0.9375rem + 2vw); /* Font size change according to screen size */
   /* font-size: 3.75rem; */
   font-weight: bold;
   /*font-weight: 600;*/ /* Font thickness */
   line-height: 1.5;
-  /* color: #005826; Font colour   */
-  color: #fff;
 }
 @media (min-width: 5120px) {
   .home-font {
@@ -515,7 +571,6 @@ body {
   /* font-size: 1.25rem; */
   font-weight: bold; /* Font thickness */
   line-height: 1.5;
-  color: #005826; /* Font colour */ 
   text-transform: uppercase;
 }
 
@@ -526,7 +581,8 @@ body {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: transparent;
+  /* background-color: var(--back-color); */
   /* background-clip: border-box; */
   /* border: 1px solid #005826; */
   border-radius: 15px;
@@ -538,15 +594,13 @@ body {
 }
 
 .card-body {
-  background-color: #012304;
-  color: #005826;
-  border: 1px solid #fff;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  background-color: transparent;
+  /* background-color: var(--back-color); */
+  font-family: 'Roboto';
+  font-weight: bolder;
 }
 .shadow-lg {
-  /* box-shadow: 0 1rem 2rem rgba(0,88,38, .9) !important; */
-  /* box-shadow: 0.5rem 0.5rem 1rem 0 rgba(255,255,255,.4) !important; Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
+  box-shadow: 3px 3px 7px 0px rgba(0,88,38, .9) !important; /* Horizontal Shadow, Vertical Shadow, Blur radius, Spread Radius, Colour */
 }
 
 /*-------------------------------------------- Contact page Setting ----------*/
@@ -556,8 +610,6 @@ body {
   /* font-size: 1rem; */
   font-family: 'Lato' !important;
   /* line-height: 1.2; */
-  /* color: #005826; */
-  color: #fff;
   padding-top: 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -569,10 +621,84 @@ body {
 }
 
 .contact-list {
-  color: #005826;
-  /* color: #fff; */
   /* font-size: calc(0.5625rem + 1vw); */
   font-size: 1.25rem;
   font-family: 'Josefin Sans';
   text-align: left;
 }
+
+/*--------------------------------------------- Theme Switch Button ----------*/
+
+.theme-font { /* main_nav.html */
+  font-family: 'Lato';
+  font-weight: bold;
+  line-height: 1;
+}
+
+/*-------------- The box around the slider ----------*/ 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 26px;
+  height: 44px;
+}
+
+/*------------ Hide default HTML checkbox ----------*/
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/*---------------------------- The slider ----------*/
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: var(--back-color); */
+  background-color: #f5fffa;
+  border: 1px solid #005826;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 18px;
+  left: 3px;
+  bottom: 5px;
+  /* background-color: var(--back-color); */
+  background-color: #f5fffa;
+  border: 1px solid #005826;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #005826;
+  /* background-color: var(--back-color); */
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #005826;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateY(-22px);
+  -ms-transform: translateY(-22px);
+  transform: translateY(-22px);
+}
+
+/*---------------------- Rounded sliders ----------*/
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 

@@ -7,20 +7,25 @@
                 {% include 'includes/side_nav.html' %}
             
         </li>
-
-        <li class="list-inline-item dropdown d-none d-lg-block">
-            <a class="logo-font nav-theme" href="#" id="theme" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="text-center" onclick="themeFunction">
-                    <!-- <div><i class="fas fa-toggle-on"></i></div> -->
-                    <div><span class="badge-light" id="badge-dark">Dark</span></div>
-                    <p class="my-0">Theme</p>
+        <li class="list-inline-item dropdown d-none d-lg-block my-auto">
+            <div class="theme-font logo-shadow mb-2">Dark</div>
+            <div class="theme-font mt-2">Light</div>
+        </li>
+        
+        <li class="list-inline-item dropdown d-none d-lg-block my-auto">
+            <div class="text-center" onclick="themeFunction()">
+                <div>
+                    <label class="switch">
+                        <input type="checkbox" id="theme" onclick="myFunction()"/>
+                        <span class="slider round"></span>
+                    </label>
                 </div>
-            </a>
+            </div>
         </li>
 
         <li class="list-inline-item dropdown d-none d-lg-block">
             <a class="logo-font nav-acc" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="text-center">
+                <div class="text-center logo-shadow">
                     <div><i class="fas fa-user fa-lg"></i></div>
                     <p class="my-0">Account</p>
                 </div>
@@ -41,7 +46,7 @@
         
         <li class="list-inline-item d-none d-lg-block">
             <a class="{% if grand_total %}text-info font-weight-bold{% else %}logo-font{% endif %} nav-acc" href="">
-                <div class="text-center">
+                <div class="text-center logo-shadow">
                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                     <p class="my-0">
                         {% if grand_total %}
